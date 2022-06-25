@@ -1,8 +1,0 @@
-*** Settings ***
-Documentation                       This is the landing page object
-Library                             SeleniumLibrary
-Library                             String
-Library                             Collections
-
-*** Keywords ***
-check cart added item

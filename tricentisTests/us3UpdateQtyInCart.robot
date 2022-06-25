@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation   Landing page tests
+Documentation   Tricentis tests
 # Library section
 Library                             SeleniumLibrary
 Library                             String
@@ -15,21 +15,21 @@ Resource                            ../tricentisPages/cartPage.robot
 
 
 #Suite setup and tear down section
-Suite Setup                          test setup    http://demowebshop.tricentis.com/
-#Suite Setup                          test setup
-#Suite Teardown                      Close Browser
+Suite Setup                             test setup    ${url}
+Suite Teardown                          Close Browser
 
 *** Variables ***
-#${url}                              http://demowebshop.tricentis.com/
+${url}                                  http://demowebshop.tricentis.com/
 
 *** Test Cases ***
-Select an item from top menu bar
-    click option from top menu bar  electronics
-    select submenu item     cell-phones
-    click item      smartphone
+Update the quantity
+    click option from category list     electronics
+    select item from sub category list  cell-phones
+    click item                          smartphone
     click add to cart button
     go to shopping cart
-    check cart added item   Smartphone
-   # check cart qty    1
+    check cart added item               Smartphone
+    update cart qty                     3
+    check cart qty                      3
 
 
