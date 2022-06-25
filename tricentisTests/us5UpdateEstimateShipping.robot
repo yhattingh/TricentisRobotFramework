@@ -33,7 +33,7 @@ Update the Estimate Shipping Info
     select province from list           54
     enter postal code                   7600
     click estimate shipping button
-    get data after estimate shipping        Compared to other shipping methods, like by flight or over seas, ground shipping is carried out closer to the earth
+    get data after estimate shipping    Compared to other shipping methods, like by flight or over seas, ground shipping is carried out closer to the earth
 
 
 

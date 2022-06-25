@@ -12,7 +12,7 @@ Resource                            ../frameworkClasses/globalSetup.robot
 Resource                            ../tricentisPages/landingPage.robot
 Resource                            ../tricentisPages/itemPage.robot
 Resource                            ../tricentisPages/cartPage.robot
-Resource    ../tricentisPages/comparePage.robot
+Resource                            ../tricentisPages/comparePage.robot
 
 
 #Suite setup and tear down section

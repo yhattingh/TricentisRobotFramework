@@ -45,5 +45,5 @@ click estimate shipping button
 
 get data after estimate shipping
     [Arguments]                 ${returnedData}
-    Element Text Should Be    css:.shipping-results .shipping-option-item:nth-of-type(1) .option-description    ${returnedData}
+    Element Text Should Be      css:.shipping-results .shipping-option-item:nth-of-type(1) .option-description    ${returnedData}
 

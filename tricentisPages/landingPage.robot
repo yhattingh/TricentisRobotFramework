@@ -23,4 +23,4 @@ select item from sub category list
 
 select item from customer services
     [Arguments]         ${selectoption}
-    Click Element    css:[href='\/${selectoption}']
+    Click Element       css:[href='\/${selectoption}']
