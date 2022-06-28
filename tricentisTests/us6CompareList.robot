@@ -23,7 +23,8 @@ Suite Teardown                          Close Browser
 ${url}                                  http://demowebshop.tricentis.com/
 
 *** Test Cases ***
-Compare selected items
+#Compare selected items
+GIVEN_shopperIsOnTheLandingPage_WHEN_shopperSelectsOptionFromCategoryList_AND_selectsAnItemFromSubCategoryList_AND_shopperClicksCompareListButton_AND_shopperSelectsAnotherItemFromList_AND_clicksCompareListButton_THEN_ChecksPricesOnBothItems
     click option from category list     electronics
     select item from sub category list  cell-phones
     click item                          smartphone

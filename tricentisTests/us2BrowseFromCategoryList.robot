@@ -22,7 +22,8 @@ Suite Teardown                          Close Browser
 ${url}                                  http://demowebshop.tricentis.com/
 
 *** Test Cases ***
-Browse from category list
+#Browse from category list
+GIVEN_shopperIsOnTheLandingPage_WHEN_shopperSelectsOptionFromCategoryList_AND_selectsAnItemFromSubCategoryList_AND_addsItemToCart_THEN_ChecksThatItemIsAddedToCart
     click option from category list     electronics
     select item from sub category list  cell-phones
     click item                          smartphone

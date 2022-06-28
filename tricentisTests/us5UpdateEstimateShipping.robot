@@ -22,7 +22,8 @@ Suite Teardown                          Close Browser
 ${url}                                  http://demowebshop.tricentis.com/
 
 *** Test Cases ***
-Update the Estimate Shipping Info
+#Update the Estimate Shipping Info
+GIVEN_shopperIsOnTheLandingPage_WHEN_shopperSelectsOptionFromCategoryList_AND_selectsAnItemFromSubCategoryList_AND_addsItemToCart_AND_shopperChecksItemIsAdded_AND_shopperSelectsACountry_AND_selectsAProvince_AND_entersPostalCode_THEN_ChecksEstimateShippingData
     click option from category list     electronics
     select item from sub category list  cell-phones
     click item                          smartphone

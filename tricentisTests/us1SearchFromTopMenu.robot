@@ -22,7 +22,9 @@ Suite Teardown                       Close Browser
 ${url}                              http://demowebshop.tricentis.com/
 
 *** Test Cases ***
-Select an item from top menu bar
+#Select an item from top menu bar
+GIVEN_shopperIsOnTheLandingPage_WHEN_shopperSelectsOptionFromTopMenuBar_AND_selectsAnItem_AND_addsItemToCart_THEN_ChecksThatItemIsAddedToCart
+
     click option from top menu bar  electronics
     select submenu item             cell-phones
     click item                      smartphone

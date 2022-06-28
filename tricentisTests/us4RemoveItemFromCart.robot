@@ -22,7 +22,9 @@ Suite Teardown                          Close Browser
 ${url}                                  http://demowebshop.tricentis.com/
 
 *** Test Cases ***
-Remove selected item from cart
+#Remove selected item from cart
+GIVEN_shopperIsOnTheLandingPage_WHEN_shopperSelectsOptionFromCategoryList_AND_selectsAnItemFromSubCategoryList_AND_addsItemToCart_AND_shopperRemovesItemFromCart_THEN_ChecksThatCartIsEmpty
+
     click option from category list     electronics
     select item from sub category list  cell-phones
     click item                          smartphone
